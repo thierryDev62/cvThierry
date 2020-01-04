@@ -5,49 +5,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="CV dynamique - Développeur Web & Web Mobile de Thierry BROUET">
     <title>CV Développeur Web & Web Mobile - Thierry Brouet</title>
     <link rel="stylesheet" href="libs/css/bootstrap.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
 </head>
 
 <body>
-    <header class="container-fluid bg-warning">
+    <header class="container-fluid bg-warning mb-3">
         <div class="row p-3 align-items-center justify-content-around">
-            <div class="row">
-                <!-- Photo de profil -->
-                <div class="col">
-                    <p><img class="rounded-circle shadow" src="libs/images/photo-profil-thierry.jpg"
-                            alt="Photo de profil de Thierry Brouet"></p>
-                </div>
-                <!-- Coordonnées -->
-                <div class="col">
-                    <ul class="list-group shadow rounded">
-                        <li class="list-group-item list-group-item-warning font-weight-bold">Thierry BROUET</li>
-                        <li class="list-group-item list-group-item-warning">5, rue du Vieil Arras</li>
-                        <li class="list-group-item list-group-item-warning">62620 BARLIN</li>
-                        <li class="list-group-item list-group-item-warning">contact62000[at]gmail.com</li>
-                    </ul>
+            <div class="col">
+                <div class="row mx-auto">
+                    <!-- Photo de profil -->
+                    <div class="col text-center">
+                        <p><img class="rounded-circle shadow" src="libs/images/photo-profil-thierry.jpg"
+                                alt="Photo de profil de Thierry Brouet"></p>
+                                <div class="small">Stagiaire motivé à l'AFPA de Liévin</div>
+                    </div>
+                    <!-- Coordonnées -->
+                    <div class="col">
+                        <ul class="list-group shadow rounded">
+                            <li class="list-group-item list-group-item-warning font-weight-bold">Thierry BROUET</li>
+                            <li class="list-group-item list-group-item-warning">5, rue du Vieil Arras</li>
+                            <li class="list-group-item list-group-item-warning">62620 BARLIN</li>
+                            <li class="list-group-item list-group-item-warning"><img src="libs/images/icone-email.png"
+                                    alt="Icone email"> contact62000[at]gmail.com</li>
+                            <li class="list-group-item list-group-item-warning"><img src="libs/images/icone-mobile.png"
+                                    alt="Icone email"> 06 / 69 / 20 / 52 / 34</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <!-- Titre métier -->
             <div class="col-6">
-                <h1 class="display-4">Développeur Web & Web Mobile</h1>
+                <h1 class="display-4-md">Développeur Web & Web Mobile</h1>
                 <div class="media align-items-center">
-                    <img src="libs/images/icone-formation.png" class="mr-3" alt="Icone formation">
+                    <p><img src="libs/images/icone-formation.png" class="mr-3" alt="Icone formation"></p>
                     <div class="media-body">
-                        <p>Je suis actuellement à la recherche d'un stage en entreprise (non rémunéré et dans les secteurs de Lens / Arras / Béthune) axé principalement sur le back-end (SQL, PHP, SYMPHONY) qui doit se dérouler du :<br> <span class="font-weight-bold">23
-                                mars 2020 au 30 avril 2020.</span></p>
+                        <p>Je suis actuellement à la recherche d'un stage en entreprise (non rémunéré et dans les
+                            secteurs de Lens / Arras / Béthune) axé principalement sur le back-end (SQL, PHP, SYMPHONY)
+                            qui doit se dérouler du :</p>
+                        <p><span class="font-weight-bold">23 mars 2020 au 30 avril 2020.</span></p>
                         <p>N'hésitez-pas à me contacter pour plus d'information.</p>
                     </div>
                 </div>
-
             </div>
         </div>
     </header>
 
     <!-- Menu -->
-    <nav class="container-fluid">
+    <nav class="container-fluid mb-3">
         <div class="row p-3">
             <div class="col">
                 <ul class="nav justify-content-center">
@@ -55,18 +63,18 @@
                         <button type="button" class="btn btn-success" id="boutonCompetences">Compétences</button>
                     </li>
                     <li class="nav-item mx-3 shadow">
-                        <button type="button" class="btn btn-primary" id="boutonExperiencesPro">Expériences professionnelles</button>
+                        <button type="button" class="btn btn-primary" id="boutonExperiencesPro">Expériences
+                            professionnelles</button>
                     </li>
                     <li class="nav-item mx-3 shadow">
-                        <button type="button" class="btn btn-danger">Formation</button>
+                        <button type="button" class="btn btn-danger" id="boutonFormation">Formation</button>
                     </li>
                     <li class="nav-item mx-3 shadow">
-                        <button type="button" class="btn btn-dark">Mes réalisations</button>
+                        <button type="button" class="btn btn-dark" id="boutonRealisations">Mes réalisations</button>
                     </li>
                     <li class="nav-item mx-3 shadow">
                         <button type="button" class="btn btn-warning">Les plus</button>
                     </li>
-
                 </ul>
             </div>
         </div>
@@ -74,13 +82,25 @@
 
     <!-- Corps -->
     <div id="corps" class="container">
-        
+
     </div>
 
     <footer class="container-fluid bg-dark">
         <div class="row p-3">
             <div class="col">
                 <p class="text-white">Copyright &copy2020 - Thierry Brouet</p>
+            </div>
+            <div class="col">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <p><a href="https://www.linkedin.com/in/thierry-brouet-481498192/" target="_blank"><img
+                                    src="libs/images/icone-linkedin.png" alt="Icone Linkedin"></a></p>
+                    </li>
+                    <li class="nav-item">
+                        <p><a href="https://github.com/thierryDev62" target="_blank"><img
+                                    src="libs/images/icone-github.png" alt="Icone Github"></a></p>
+                    </li>
+                </ul>
             </div>
         </div>
 

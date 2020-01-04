@@ -1,0 +1,51 @@
+<div class="row">
+    <div class="col">
+        <div class="card text-white bg-dark mb-3 shadow">
+            <div class="card-header text-center h2">Mes réalisations</div>
+            <div class="card-body bg-light">
+                <h3 class="mb-3 text-dark">Aux Plaisirs Sucrés</h3>
+                <div class="media">
+                    <img src="libs/images/thumb-auxplaisirssucres.jpg" class="align-self-center mr-3 img-thumbnail"
+                        alt="Miniature site Aux Plaisirs Sucrés">
+                    <div class="media-body">
+                        <h5 class="mt-0 text-dark">Partie front-end - Technos utilisées : HTML, CSS, Bootstrap,
+                            Javascript, JQuery</h5>
+                        <p class="text-dark">J'ai développé ce site dans le cadre de mon stage en entreprise d'un mois
+                            et demi. Stage que j'ai effectué chez moi en parfaite autonomie.</p>
+                        <p class="text-dark">Il a été réalisé pour un Artisan pâtissier situé à Haillecourt.</p>
+                        <p class="text-dark">Celui-ci n'a pas souhaité que le site soit mis en ligne.</p>
+                        <button type="button" class="btn btn-success mb-3" id="boutonAuxPlaisirsSucres">Visiter le
+                            site</button>
+
+                    </div>
+                </div>
+
+                <h3 class="mb-3 text-dark">Fashion</h3>
+                <div class="media">
+                    <img src="libs/images/thumb-fashion.jpg" class="align-self-center mr-3 img-thumbnail"
+                        alt="Miniature site Fashion">
+                    <div class="media-body">
+                        <h5 class="mt-0 text-dark">Une page d'accueil exemple - Technos utilisées : HTML, CSS, Bootstrap</h5>
+                        <p class="text-dark">Page développée en un week-end pour tester ce que je venais d'apprendre avec le framework css Bootstrap.</p>
+                        
+                        <button type="button" class="btn btn-success" id="boutonFashion">Visiter le
+                            site</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $("#boutonAuxPlaisirsSucres").on("click", function () {
+            window.location.href = "https://thierrydev62.github.io/auxPlaisirsSucres/";
+        });
+        $("#boutonFashion").on("click", function () {
+            window.location.href = "https://thierrydev62.github.io/fashion/";
+        });
+    });
+
+</script>

@@ -9,6 +9,15 @@ $(function () {
 
     $("#boutonExperiencesPro").on("click", function() {
         $("#corps").load("templates/experiences.html")
-    })
+    });
+
+    $("#boutonFormation").on("click", function() {
+        $("#corps").load("templates/formation.html")
+    });
+
+    $("#boutonRealisations").on("click", function() {
+        $("#corps").load("templates/realisations.html")
+    });
+
 })
 
