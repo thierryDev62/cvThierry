@@ -8,6 +8,7 @@
     <title>CV Développeur Web & Web Mobile - Thierry Brouet</title>
     <link rel="stylesheet" href="libs/css/bootstrap.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
 </head>
 
 <body>
@@ -22,7 +23,7 @@
                 <!-- Coordonnées -->
                 <div class="col">
                     <ul class="list-group shadow rounded">
-                        <li class="list-group-item list-group-item-warning">Thierry BROUET</li>
+                        <li class="list-group-item list-group-item-warning font-weight-bold">Thierry BROUET</li>
                         <li class="list-group-item list-group-item-warning">5, rue du Vieil Arras</li>
                         <li class="list-group-item list-group-item-warning">62620 BARLIN</li>
                         <li class="list-group-item list-group-item-warning">contact62000[at]gmail.com</li>
@@ -31,7 +32,16 @@
             </div>
             <!-- Titre métier -->
             <div class="col-6">
-                <h1>Développeur Web & Web Mobile</h1>
+                <h1 class="display-4">Développeur Web & Web Mobile</h1>
+                <div class="media align-items-center">
+                    <img src="libs/images/icone-formation.png" class="mr-3" alt="Icone formation">
+                    <div class="media-body">
+                        <p>Je suis actuellement à la recherche d'un stage en entreprise (non rémunéré et dans les secteurs de Lens / Arras / Béthune) axé principalement sur le back-end (SQL, PHP, SYMPHONY) qui doit se dérouler du :<br> <span class="font-weight-bold">23
+                                mars 2020 au 30 avril 2020.</span></p>
+                        <p>N'hésitez-pas à me contacter pour plus d'information.</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </header>
@@ -42,22 +52,39 @@
             <div class="col">
                 <ul class="nav justify-content-center">
                     <li class="nav-item mx-3 shadow">
-                        <button type="button" class="btn btn-success">Compétences</button>
+                        <button type="button" class="btn btn-success" id="boutonCompetences">Compétences</button>
                     </li>
                     <li class="nav-item mx-3 shadow">
-                        <button type="button" class="btn btn-primary">Expériences professionnelles</button>
+                        <button type="button" class="btn btn-primary" id="boutonExperiencesPro">Expériences professionnelles</button>
                     </li>
                     <li class="nav-item mx-3 shadow">
                         <button type="button" class="btn btn-danger">Formation</button>
                     </li>
                     <li class="nav-item mx-3 shadow">
+                        <button type="button" class="btn btn-dark">Mes réalisations</button>
+                    </li>
+                    <li class="nav-item mx-3 shadow">
                         <button type="button" class="btn btn-warning">Les plus</button>
                     </li>
-                    
+
                 </ul>
             </div>
         </div>
     </nav>
+
+    <!-- Corps -->
+    <div id="corps" class="container">
+        
+    </div>
+
+    <footer class="container-fluid bg-dark">
+        <div class="row p-3">
+            <div class="col">
+                <p class="text-white">Copyright &copy2020 - Thierry Brouet</p>
+            </div>
+        </div>
+
+    </footer>
 
 
     <script async src="libs/js/jquery-3.4.1.min.js"></script>
