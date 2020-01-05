@@ -13,19 +13,19 @@
 </head>
 
 <body>
-    <header class="container-fluid bg-warning mb-3">
-        <div class="row p-3 align-items-center justify-content-around">
+    <header class="container-fluid bg-dark mb-3 text-white">
+        <div class="row p-md-3 align-items-center justify-content-around">
             <div class="col">
                 <div class="row mx-auto">
                     <!-- Photo de profil -->
-                    <div class="col text-center">
-                        <p><img class="rounded-circle shadow" src="libs/images/photo-profil-thierry.jpg"
+                    <div class="col-12 col-lg-6 text-center">
+                        <p><img class="rounded-circle shadow img-thumbnail" src="libs/images/photo-profil-thierry.jpg"
                                 alt="Photo de profil de Thierry Brouet"></p>
-                                <div class="small">Stagiaire motivé à l'AFPA de Liévin</div>
+                        <div class="small mb-1">Stagiaire motivé à l'AFPA de Liévin</div>
                     </div>
                     <!-- Coordonnées -->
-                    <div class="col">
-                        <ul class="list-group shadow rounded">
+                    <div class="col-12 col-lg-6 px-0">
+                        <ul class="list-group shadow-lg rounded-lg mb-3">
                             <li class="list-group-item list-group-item-warning font-weight-bold">Thierry BROUET</li>
                             <li class="list-group-item list-group-item-warning">5, rue du Vieil Arras</li>
                             <li class="list-group-item list-group-item-warning">62620 BARLIN</li>
@@ -38,18 +38,19 @@
                 </div>
             </div>
             <!-- Titre métier -->
-            <div class="col-6">
-                <h1 class="display-4-md">Développeur Web & Web Mobile</h1>
-                <div class="media align-items-center">
-                    <p><img src="libs/images/icone-formation.png" class="mr-3" alt="Icone formation"></p>
-                    <div class="media-body">
-                        <p>Je suis actuellement à la recherche d'un stage en entreprise (non rémunéré et dans les
-                            secteurs de Lens / Arras / Béthune) axé principalement sur le back-end (SQL, PHP, SYMPHONY)
-                            qui doit se dérouler du :</p>
-                        <p><span class="font-weight-bold">23 mars 2020 au 30 avril 2020.</span></p>
-                        <p>N'hésitez-pas à me contacter pour plus d'information.</p>
-                    </div>
+            <div class="col-12 col-md-6 text-center flex-md-row flex-column">
+                <h1>Développeur Web & Web Mobile</h1>
+                <div class="col-12">
+                    <p><img src="libs/images/developpeur.jpg" class="mr-3" alt="Image développeur web"></p>
                 </div>
+                <div class="col-12 px-0">
+                    <p>Je suis actuellement à la recherche d'un stage en entreprise (non rémunéré) axé de préférence sur
+                        le back-end (SQL, PHP, SYMPHONY), qui doit se dérouler du :</p>
+                    <p><span class="font-weight-bold">23 mars 2020 au 30 avril 2020.</span></p>
+                    <p>Si possible dans les secteurs de Béthune, Lens ou Arras.</p>
+                    <p>N'hésitez-pas à me contacter pour plus d'information.</p>
+                </div>
+
             </div>
         </div>
     </header>
@@ -58,22 +59,22 @@
     <nav class="container-fluid mb-3">
         <div class="row p-3">
             <div class="col">
-                <ul class="nav justify-content-center">
-                    <li class="nav-item mx-3 shadow">
+                <ul class="nav justify-content-center flex-md-row flex-column align-items-center">
+                    <li class="nav-item mx-3 md-shadow mb-2">
                         <button type="button" class="btn btn-success" id="boutonCompetences">Compétences</button>
                     </li>
-                    <li class="nav-item mx-3 shadow">
+                    <li class="nav-item mx-3 md-shadow mb-2">
                         <button type="button" class="btn btn-primary" id="boutonExperiencesPro">Expériences
                             professionnelles</button>
                     </li>
-                    <li class="nav-item mx-3 shadow">
+                    <li class="nav-item mx-3 md-shadow mb-2">
                         <button type="button" class="btn btn-danger" id="boutonFormation">Formation</button>
                     </li>
-                    <li class="nav-item mx-3 shadow">
+                    <li class="nav-item mx-3 md-shadow mb-2">
                         <button type="button" class="btn btn-dark" id="boutonRealisations">Mes réalisations</button>
                     </li>
-                    <li class="nav-item mx-3 shadow">
-                        <button type="button" class="btn btn-warning">Les plus</button>
+                    <li class="nav-item mx-3 md-shadow mb-2">
+                        <button type="button" class="btn btn-warning" id="boutonLesPlus">Les plus</button>
                     </li>
                 </ul>
             </div>

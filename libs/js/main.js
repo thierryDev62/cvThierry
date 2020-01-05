@@ -1,3 +1,5 @@
+// Partie JQuery avec tous les évènements aux clics dans les différentes rubriques
+
 $(function () {
     $("body").css("font-family", "'Roboto', Arial, sans-serif");
 
@@ -17,6 +19,10 @@ $(function () {
 
     $("#boutonRealisations").on("click", function() {
         $("#corps").load("templates/realisations.html")
+    });
+
+    $("#boutonLesPlus").on("click", function() {
+        $("#corps").load("templates/lesplus.html")
     });
 
 })
