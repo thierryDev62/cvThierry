@@ -10,19 +10,19 @@ $(function () {
     });
 
     $("#boutonExperiencesPro").on("click", function() {
-        $("#corps").load("templates/experiences.html")
+        $("#corps").load("templates/experiences.html").hide().fadeIn();
     });
 
     $("#boutonFormation").on("click", function() {
-        $("#corps").load("templates/formation.html")
+        $("#corps").load("templates/formation.html").hide().fadeIn();
     });
 
     $("#boutonRealisations").on("click", function() {
-        $("#corps").load("templates/realisations.html")
+        $("#corps").load("templates/realisations.html").hide().fadeIn();
     });
 
     $("#boutonLesPlus").on("click", function() {
-        $("#corps").load("templates/lesplus.html")
+        $("#corps").load("templates/lesplus.html").hide().fadeIn();
     });
 
 })
