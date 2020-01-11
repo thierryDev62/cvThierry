@@ -6,27 +6,33 @@
                 <h3 class="mb-3 text-dark">Technos utilisées</h3>
                 <ul class="nav justify-content-center mb-5">
                     <li class="nav-item mx-3">
-                        <img src="libs/images/icone-html.png" class="card-img-top" alt="icone HTML">
+                        <img id="iconeHTML" src="libs/images/icone-html.png" class="card-img-top iconBeautify"
+                            alt="icone HTML">
                         <div class="small text-center text-dark font-weight-bold">HTML</div>
                     </li>
                     <li class="nav-item mx-3">
-                        <img src="libs/images/icone-css.png" class="card-img-top" alt="icone CSS">
+                        <img id="iconeCSS" src="libs/images/icone-css.png" class="card-img-top iconBeautify"
+                            alt="icone CSS">
                         <div class="small text-center text-dark font-weight-bold">CSS</div>
                     </li>
                     <li class="nav-item mx-3">
-                        <img src="libs/images/icone-javascript.png" class="card-img-top" alt="icone Javascript">
+                        <img id="iconeJavascript" src="libs/images/icone-javascript.png"
+                            class="card-img-top iconBeautify" alt="icone Javascript">
                         <div class="small text-center text-dark font-weight-bold">Javascript</div>
                     </li>
                     <li class="nav-item mx-3">
-                        <img src="libs/images/icone-jquery.png" class="card-img-top" alt="icone JQuery">
+                        <img id="iconeJquery" src="libs/images/icone-jquery.png" class="card-img-top iconBeautify"
+                            alt="icone JQuery">
                         <div class="small text-center text-dark font-weight-bold">JQuery</div>
                     </li>
                     <li class="nav-item mx-3">
-                        <img src="libs/images/icone-bootstrap.png" class="card-img-top" alt="icone Bootstrap">
+                        <img id="iconeBootstrap" src="libs/images/icone-bootstrap.png" class="card-img-top iconBeautify"
+                            alt="icone Bootstrap">
                         <div class="small text-center text-dark font-weight-bold">Bootstrap</div>
                     </li>
                     <li class="nav-item mx-3">
-                        <img src="libs/images/icone-wordpress.png" class="card-img-top" alt="icone Wordpress">
+                        <img id="iconeWordpress" src="libs/images/icone-wordpress.png" class="card-img-top iconBeautify"
+                            alt="icone Wordpress">
                         <div class="small text-center text-dark font-weight-bold">Wordpress</div>
                     </li>
                 </ul>
@@ -34,12 +40,13 @@
                 <h3 class="mb-3 text-dark">Editeurs de texte utilisés</h3>
                 <ul class="nav justify-content-center mb-5">
                     <li class="nav-item mx-3">
-                        <img src="libs/images/icone-phpstorm.png" class="card-img-top" alt="icone PhpStorm">
+                        <img id="iconePhpStorm" src="libs/images/icone-phpstorm.png" class="card-img-top iconBeautify"
+                            alt="icone PhpStorm">
                         <div class="small text-center text-dark font-weight-bold">PhpStorm</div>
                     </li>
                     <li class="nav-item mx-3">
-                        <img src="libs/images/icone-visual-studio-code.png" class="card-img-top"
-                            alt="icone Visual Studio Code">
+                        <img id="iconeVisualStudioCode" src="libs/images/icone-visual-studio-code.png"
+                            class="card-img-top iconBeautify" alt="icone Visual Studio Code">
                         <div class="small text-center text-dark font-weight-bold">VS Code</div>
                     </li>
                 </ul>
@@ -58,3 +65,50 @@
         </div>
     </div>
 </div>
+<script>
+    $(function () {
+        $(".iconBeautify").css(
+            {
+                "border": "2px solid rgba(0,0,0,0.2)",
+                "border-radius": "10px",
+                "box-shadow": "0 2px 8px rgba(0,0,0,0.4), 0 1px 9px rgba(0,0,0,0.2)",
+                "padding": "5px"
+            });
+
+        $("#iconeHTML").on("mouseover", function () {
+            $(this).attr("title", "HTML 5");
+        });
+
+        $("#iconeCSS").on("mouseover", function () {
+            $(this).attr("title", "CSS 3");
+        });
+
+
+        $("#iconeJavascript").on("mouseover", function () {
+            $(this).attr("title", "Vanilla JS");
+        });
+
+
+        $("#iconeJquery").on("mouseover", function () {
+            $(this).attr("title", "Jquery 3");
+        });
+
+
+        $("#iconeBootstrap").on("mouseover", function () {
+            $(this).attr("title", "Bootstrap 4");
+        });
+
+
+        $("#iconeWordpress").on("mouseover", function () {
+            $(this).attr("title", "Wordpress");
+        });
+
+        $("#iconePhpStorm").on("mouseover", function () {
+            $(this).attr("title", "PhpStorm");
+        });
+
+        $("#iconeVisualStudioCode").on("mouseover", function () {
+            $(this).attr("title", "Visual Studio Code");
+        });
+    });
+</script>
