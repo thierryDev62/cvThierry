@@ -6,7 +6,7 @@ $(function () {
     $("#corps").load("templates/competences.html");
 
     $("#boutonCompetences").on("click", function () {
-        $("#corps").load("templates/competences.html");
+        $("#corps").load("templates/competences.html").hide().fadeIn();
     });
 
     $("#boutonExperiencesPro").on("click", function() {
