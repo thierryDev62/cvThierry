@@ -50,6 +50,19 @@
                         <div class="small text-center text-dark font-weight-bold">VS Code</div>
                     </li>
                 </ul>
+                <h3 class="mb-3 text-dark">Outils GIT</h3>
+                <ul class="nav justify-content-center mb-5">
+                    <li class="nav-item mx-3">
+                        <img id="iconeGithubDesktop" src="libs/images/icone-github-desktop.png" class="card-img-top iconBeautify"
+                            alt="icone Github Desktop">
+                        <div class="small text-center text-dark font-weight-bold">Git Desktop</div>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <img id="iconeGitKraken" src="libs/images/icone-gitkraken.png"
+                            class="card-img-top iconBeautify" alt="icone GitKraken">
+                        <div class="small text-center text-dark font-weight-bold">GitKraken</div>
+                    </li>
+                </ul>
 
                 <h3 class="mb-3 text-dark">Partie front-end</h3>
                 <p class="text-dark">Création d'une maquette d'une application selon la demande du client et du
@@ -67,6 +80,8 @@
 </div>
 <script>
     $(function () {
+
+        // Un peu de css sur les icones
         $(".iconBeautify").css(
             {
                 "border": "2px solid rgba(0,0,0,0.2)",
@@ -75,40 +90,25 @@
                 "padding": "5px"
             });
 
-        $("#iconeHTML").on("mouseover", function () {
-            $(this).attr("title", "HTML 5");
-        });
+        // Titres des icones
+        let icones = {
+            "#iconeHTML" : "HTML 5",
+            "#iconeCSS" : "CSS 3",
+            "#iconeJavascript" : "Vanilla JS",
+            "#iconeJquery" : "Jquery 3",
+            "#iconeBootstrap" : "Bootstrap 4",
+            "#iconeWordpress" : "Wordpress",
+            "#iconePhpStorm" : "PHPStorm",
+            "#iconeVisualStudioCode" : "Visual Studio Code",
+            "#iconeGithubDesktop" : "Github Desktop",
+            "#iconeGitKraken" : "GitKraken"
+        }
 
-        $("#iconeCSS").on("mouseover", function () {
-            $(this).attr("title", "CSS 3");
-        });
+        for(let datas in icones) {
+            $(datas).on("mouseover", function () {
+            $(this).attr("title", icones[datas])
+            });
+        }
 
-
-        $("#iconeJavascript").on("mouseover", function () {
-            $(this).attr("title", "Vanilla JS");
-        });
-
-
-        $("#iconeJquery").on("mouseover", function () {
-            $(this).attr("title", "Jquery 3");
-        });
-
-
-        $("#iconeBootstrap").on("mouseover", function () {
-            $(this).attr("title", "Bootstrap 4");
-        });
-
-
-        $("#iconeWordpress").on("mouseover", function () {
-            $(this).attr("title", "Wordpress");
-        });
-
-        $("#iconePhpStorm").on("mouseover", function () {
-            $(this).attr("title", "PhpStorm");
-        });
-
-        $("#iconeVisualStudioCode").on("mouseover", function () {
-            $(this).attr("title", "Visual Studio Code");
-        });
     });
 </script>
