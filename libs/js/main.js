@@ -20,7 +20,27 @@ $(function () {
         });
     });
 
-    // Partie JQuery avec tous les évènements aux clics dans les différentes rubriques
+    // La photo de profil
+    $("#logo").on("mouseenter", function(){
+        $(this).css(
+            {
+                "transform": "scale(1.1)",
+                "transition-property": "transform",
+                "transition-duration": "0.3s",
+                "opacity": "0.5"
+            }
+        )
+    });
+    $("#logo").on("mouseleave", function(){
+        $(this).css(
+            {
+                "transform": "scale(1)",
+                "opacity": "1"
+            }
+        )
+    });
+
+    // Partie avec tous les évènements aux clics dans les différentes rubriques
 
     $("#boutonCompetences").on("click", function () {
         $("#corps").load("templates/competences.html").hide().fadeIn();
@@ -41,6 +61,6 @@ $(function () {
     $("#boutonLesPlus").on("click", function () {
         $("#corps").load("templates/lesplus.html").hide().fadeIn();
     });
-
+    
 })
 
