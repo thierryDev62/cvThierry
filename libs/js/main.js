@@ -1,5 +1,5 @@
 $(function () {
-    $("body").css("font-family", "'Roboto', Arial, sans-serif");
+    $("body").css("font-family", "'Sriracha', cursive, Arial, sans-serif");
 
     $("#corps").load("templates/competences.html");
 
