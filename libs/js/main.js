@@ -7,7 +7,7 @@ $(function () {
 
     $("button").on("mouseover", function () {
         $(this).css({
-            "transform": "scale(1.2)",
+            "transform": "scale(1.1)",
             "transition-property": "transform",
             "transition-duration": "0.3s",
             "box-shadow": "0 2px 8px rgba(0,0,0,0.4), 0 1px 9px rgba(0,0,0,0.2)"
