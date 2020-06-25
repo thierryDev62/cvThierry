@@ -89,6 +89,33 @@
                         </div>
                     </div>
                 </div>
+                <div class="card shadow-lg rounded-lg mb-3">
+                    <div class="card-body">
+                        <h3 class="mb-3 text-dark">Google books - Vue.js</h3>
+                        <div class="row flex-md-row flex-column text-center align-items-center">
+                            <div class="col mb-2">
+                                <img src="libs/images/thumbnail-google-books-vuejs.jpg" class="align-self-center mr-3 img-thumbnail shadow-lg"
+                                     alt="Miniature site Fashion">
+                            </div>
+                            <div class="col">
+                                <h5 class="mt-0 text-dark">Recherche de livres ebooks sur Google books - Vue.js</h5>
+                                <hr>
+                                <p class="text-dark font-weight-bold">Technos utilisées</p>
+
+                                <p class="text-dark"><img src="libs/images/mini-icone-html.png" alt="Mini icône HTML 5"> HTML 5</p>
+                                <p class="text-dark"><img src="libs/images/mini-icone-css.png" alt="Mini icône CSS 3"> CSS 3</p>
+                                <p class="text-dark"><img src="libs/images/mini-icone-bootstrap.png" alt="Mini icône Bootstrap 4"> Bootstrap 4</p>
+                                <p class="text-dark"><img src="libs/images/mini-icone-vuejs.png" alt="Mini icône Vue.js"> Vue.js</p>
+                                <p class="text-danger font-weight-bold">- Bibliothèques, plugins, bundles -</p>
+                                <p class="text-dark">Axios</p>
+
+                                <p class="text-dark">Petit projet d'entraînement sur le framework Javascript Vue.js avec l'API de Google Books via Axios.</p>
+                                <button type="button" class="btn btn-success" id="boutonGoogleBooks">Visiter le
+                                    site</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -101,6 +128,9 @@
         });
         $("#boutonFashion").on("click", function () {
             window.location.href = "https://thierrydev62.github.io/fashion/";
+        });
+        $("#boutonGoogleBooks").on("click", function () {
+            window.location.href = "https://thierrydev62.github.io/google-books/";
         });
     });
 
