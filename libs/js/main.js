@@ -9,13 +9,15 @@ $(function () {
         $(this).css({
             "transform": "scale(1.1)",
             "transition-property": "transform",
-            "transition-duration": "0.3s",
+            "transition-duration": "0.2s",
+            "border-radius": "25% 10%",
             "box-shadow": "0 2px 8px rgba(0,0,0,0.4), 0 1px 9px rgba(0,0,0,0.2)"
         });
     });
     $("button").on("mouseout", function () {
         $(this).css({
             "transform": "scale(1)",
+            "border-radius": "0",
             "box-shadow": "none"
         });
     });
@@ -26,7 +28,7 @@ $(function () {
             {
                 "transform": "scale(1.1)",
                 "transition-property": "transform",
-                "transition-duration": "0.3s",
+                "transition-duration": "0.2s",
                 "opacity": "0.5"
             }
         )
