@@ -4,6 +4,7 @@
 }
 body {
     margin: auto;
+    font-family: 'Sriracha', cursive, Arial, sans-serif;
 }
 .back_to_top {
     position: fixed;
