@@ -1,0 +1,39 @@
+@media (min-width:992px) {
+    .card-photo-container {
+        cursor: pointer;
+        height: 150px;
+        perspective: 540px;
+        position: relative;
+        width: 150px;
+    }
+
+    .card-photo {
+        height: 100%;
+        position: absolute;
+        transform-style: preserve-3d;
+        transition: all 1s ease-in-out;
+        width: 100%;
+    }
+
+    .card-photo:hover {
+        transform: rotateY(180deg);
+    }
+
+    .card-photo .side-photo {
+        backface-visibility: hidden;
+        border-radius: 6px;
+        height: 100%;
+        position: absolute;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .card-photo .back-photo {
+        font-size: 0.8em;
+        border: 5px solid white;
+        color: #8B8E92;
+        background: #343A40;
+        text-align: center;
+        transform: rotateY(180deg);
+    }
+}
