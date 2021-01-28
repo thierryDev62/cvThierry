@@ -10105,7 +10105,7 @@ section.resume-section .resume-section-content {
 }
 
 @media(max-width: 768px) {
-  img {
+  img.photo {
     display: none;
   }
 }
